@@ -1,0 +1,317 @@
+﻿
+$break-large: 1440px;
+
+body {
+    background: #E5E5E5;
+
+    .main-content {
+        height: 568px;
+        width: 320px;
+
+        @media screen and (min-width: $break-large) {
+            width: 1440px;
+            height: 1024px;
+        }
+
+        background: #FFFFFF;
+        margin: auto;
+
+        .top-bar {
+            img.logo {
+                position: relative;
+                left: 32px;
+                top: 24px;
+            }
+
+            left: 0px;
+            top: 0px;
+            position: relative;
+            width: 320px;
+            height: 67px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 12px rgba(97, 97, 97, 0.11);
+            margin: auto;
+
+            @media screen and (min-width: $break-large) {
+                width: 1440px;
+            }
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+            margin: auto;
+            top: 64px;
+            position: relative;
+
+            @media screen and (min-width: $break-large) {
+                width: 120px;
+                height: 120px;
+                top: 364px;
+            }
+        }
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .form-container {
+            position: relative;
+            width: 320px;
+            height: 480px;
+            left: 0px;
+            top: 44px;
+            background: #FFFFFF;
+            border: 0px;
+
+            @media screen and (min-width: $break-large) {
+                position: relative;
+                width: 720px;
+                left: 360px;
+                top: 364px;
+                border: 1px solid #F2F3F4;
+                box-sizing: border-box;
+                box-shadow: 0px 2px 12px rgba(97, 97, 97, 0.11);
+                border-radius: 8px;
+            }
+
+
+            .form-wrapper {
+                .form-header {
+                    position: absolute;
+                    width: 208px;
+                    height: 29px;
+                    left: 16px;
+                    top: 0px;
+                    font-family: Arial;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: 130%;
+                    color: #1A3559;
+                    font-size: 22px;
+
+                    @media screen and (min-width: $break-large) {
+                        position: relative;
+                        width: 359px;
+                        height: 49px;
+                        left: 185px;
+                        top: 44px;
+                        font-size: 38px;
+                        top: 90px;
+                    }
+                }
+
+                form {
+                    left: 16px;
+                    top: 40px;
+                    position: relative;
+                    max-width: 284px;
+
+                    @media screen and (min-width: $break-large) {
+                        left: 60px;
+                        top: 93px;
+                        max-width: 600px;
+                    }
+
+                    .form-group {
+                        margin-bottom: 20px;
+
+
+                        @media screen and (min-width: $break-large) {
+                            margin-bottom: 24px;
+                        }
+                    }
+
+                    label {
+                        font-family: Arial;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 130%;
+                        width: 92px;
+                        height: 17px;
+                        color: #303032;
+                        margin-bottom: 7px;
+
+                        @media screen and (min-width: $break-large) {
+                            font-size: 16px;
+                            width: auto;
+                            height: 21px;
+                            margin-bottom: 8px;
+                        }
+
+                        &.bold-label {
+                            font-weight: bold;
+                            line-height: 160%;
+                            font-size: 12px;
+                            width: 100%;
+
+                            @media screen and (min-width: $break-large) {
+                                vertical-align: top;
+                                font-size: 14px;
+                                width: 72px;
+                            }
+                        }
+
+                        &.full-path {
+                            font-size: 12px;
+                            line-height: 160%;
+                            width: 100%;
+                            word-wrap: break-word;
+
+                            @media screen and (min-width: $break-large) {
+                                font-size: 14px;
+                                margin-left: 4px;
+                                max-width: 524px;
+                            }
+                        }
+                    }
+
+                    input {
+                        width: 288px;
+                        height: 38px;
+                        background: #FFFFFF;
+                        border: 1px solid #C1C2C4;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        font-family: Arial;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 160%;
+
+                        @media screen and (min-width: $break-large) {
+                            width: 600px;
+                            height: 42px;
+                            font-size: 16px;
+                        }
+
+                        &::-webkit-input-placeholder {
+                            color: #A2A2A5;
+                        }
+
+                        &.alias {
+                            max-width: 460px;
+                        }
+                    }
+
+                    button {
+                        width: 289px;
+                        height: 42px;
+                        font-family: Arial;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                        background: #3274EF;
+                        border: 1px solid #3274EF;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        top: 26px;
+
+                        @media screen and (min-width: $break-large) {
+                            width: 128px;
+                            left: 12px;
+                            background: #3274EF;
+                            border-radius: 2px;
+                            top: 0px;
+                        }
+
+                        &.btn-ok {
+
+                            @media screen and (min-width: $break-large) {
+                                margin-left: 472px;
+                            }
+
+                            span.btn-text {
+                                left: 0px;
+                            }
+                        }
+
+
+                        i.cut {
+                            display: inline-block;
+                            background-image: url("./images/scissors.png");
+                            position: absolute;
+                            left: 105px;
+                            top: 12px;
+                            width: 16px;
+                            height: 16px;
+
+                            @media screen and (min-width: $break-large) {
+                                left: 24px;
+                                top: 13px;
+                                width: 16px;
+                                height: 16px;
+                                position: absolute;
+                            }
+                        }
+
+                        span.btn-text {
+                            left: 8px;
+                            position: relative;
+                        }
+                    }
+
+                    .div-errors {
+                        top: 60px;
+                        position: relative;
+
+                        @media screen and (min-width: $break-large) {
+                            top: 32px;
+                        }
+
+                        .lbl-error-header {
+                            font-family: Arial;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 13px;
+                            width: 100%;
+
+                            @media screen and (min-width: $break-large) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .lbl-error {
+                            font-family: Arial;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 11px;
+                            line-height: 160%;
+                            color: #D91B03;
+                            width: 100%;
+
+                            @media screen and (min-width: $break-large) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    //}
